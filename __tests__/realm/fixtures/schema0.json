@@ -1,0 +1,17 @@
+[
+  {
+    "$schema": "Employee", 
+    "name": "Mark Zuckerberg",
+    "title": "CEO"
+  },
+  {
+    "$schema": "Employee",
+    "name": "Sheryl Sandberg",
+    "title": "COO"
+  },
+  {
+    "$schema": "Employee",
+    "name": "Dustin Moskovitz",
+    "title": "Co-founder"
+  }
+]

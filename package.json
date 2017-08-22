@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-jest": "^20.0.3",
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "jest-expo": "~20.0.0",
+    "jest": "^20.0.4",
     "react-test-renderer": "16.0.0-alpha.12"
   },
   "scripts": {
@@ -14,9 +15,21 @@
     "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "react-native",
+    "setupFiles": [
+      "./jestsetup.js"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-router-native)"
+    ]
   },
   "dependencies": {
+    "bluebird": "^3.5.0",
+    "immutability-helper": "^2.3.1",
+    "moment": "^2.18.1",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.47.0",
     "realm": "^1.10.3"
