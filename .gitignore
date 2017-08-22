@@ -7,3 +7,5 @@ __tests__/databases
 realm-object-server
 .lock
 .management
+
+ios/build

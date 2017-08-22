@@ -25,7 +25,7 @@ const openConnection = (path = Realm.defaultPath) => {
   }
 
   // open the Realm with the latest schema
-  return new Realm(SCHEMAS[SCHEMAS.length - 1]);
+  return Realm.open(SCHEMAS[SCHEMAS.length - 1]);
 };
 
 export default openConnection;
