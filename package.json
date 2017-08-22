@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "react": "16.0.0-alpha.12",
-    "react-native": "^0.47.0"
+    "react-native": "^0.47.0",
+    "realm": "^1.10.3"
   }
 }
